@@ -97,7 +97,7 @@ function trim (str) {
 }
 
 
-module.exports = plumb(
+window.h2p = plumb(
   stringify,
   stripStylesAndScripts,
   listOrdered,

@@ -2,9 +2,10 @@
   "name": "html2plaintext",
   "version": "2.1.0",
   "description": "Convert HTML-formatted text to plaintext",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha"
+    "test": "node node_modules/mocha/bin/mocha",
+    "build": "webpack --mode=development"
   },
   "repository": "git@github.com:kurttheviking/html2plaintext.git",
   "keywords": [
@@ -33,9 +34,11 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "heredoc": "1.3.1",
     "chai": "3.5.0",
-    "mocha": "3.2.0"
+    "heredoc": "1.3.1",
+    "mocha": "3.2.0",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2"
   },
   "dependencies": {
     "cheerio": "0.22.0",
